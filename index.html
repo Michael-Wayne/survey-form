@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>freeCodeCamp Survey Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">
+                Survey Template
+            </h1>
+            <p id="description">
+                This is a generic survey template
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-block">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" class="form-input" placeholder="Enter your name" required />
+            </div>
+            <div class="form-block">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" class="form-input" placeholder="Enter your Email" required />
+            </div>
+            <div class="form-block">
+                <label id="number-label" for="number">Age(Optional)</label>
+                <input id="number" type="number" class="form-input" placeholder="Age" min="13" max="120">
+            </div>
+            <div class="form-block">
+                <label for="dropdown">Select an option from the dropdown</label>
+                <select id="dropdown" name="choice" class="form-input" required>
+                    <option disabled selected value>Select an option</option>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                </select>
+            </div>
+            <!-- radiobox input fields -->
+            <div class="form-block">
+                <p>Select one of the radio-boxes</p>
+                <label><input type="radio" name="radio-choice" value="radio-1" class="radio-input" checked />
+                    option 1</label>
+                <label><input type="radio" name="radio-choice" value="radio-2" class="radio-input" />
+                    option 2</label>
+
+                <label><input type="radio" name="radio-choice" value="radio-3" class="radio-input" />
+                    option 3</label>
+            </div>
+            <!-- checkbox input fields -->
+            <div class="form-block">
+                <p>Select as many check-boxes as you want</p>
+                <label><input type="checkbox" name="check-choice" value="check-1" class="checkbox-input" />
+                    option 1</label>
+                <label><input id="check-2" type="checkbox" name="check-choice" value="check-2" class="checkbox-input" />
+                    option 2</label>
+                <label><input type="checkbox" name="check-choice" value="check-3" class="checkbox-input" />
+                    option 3</label>
+                <label><input type="checkbox" name="check-choice" value="check-4" class="checkbox-input" />
+                    option 4</label>
+                <label><input type="checkbox" name="check-choice" value="check-5" class="checkbox-input" />
+                    option 5</label>
+            </div>
+            <!-- textarea input field -->
+            <div class="form-block">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="textarea-input" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <!-- submit button input -->
+            <div class="form-block">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
